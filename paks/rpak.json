@@ -1,0 +1,15 @@
+{
+    "Postload": {
+        "destroyer_add01.rpak": "common.rpak",
+        "destroyer_rail01.rpak": "common.rpak",
+        "destroyer_rail02.rpak": "common.rpak",
+        "ogre_cockpit_console_world.rpak": "common.rpak",
+        "titan_cockpit.rpak": "common.rpak",
+        "titan_cockpit_lcds.rpak": "common.rpak",
+        "titan_destroyer_arm.rpak": "common.rpak",
+        "titan_destroyer_body.rpak": "common.rpak",
+        "titan_destroyer_ex.rpak": "common.rpak",
+        "titan_destroyer_rodeo.rpak": "common.rpak",
+        "titan_shotgun_69d7b44eaf5d3009.rpak": "common.rpak"
+    }
+}

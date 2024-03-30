@@ -1,0 +1,73 @@
+{
+	"Name": "Destroyer Titan",
+	"Description": "TFO Destroyer",
+	"LoadPriority": 5,
+	"RequiredOnClient": true,
+	"Version": "1.0.0",
+	"Scripts": [
+        {
+            "Path": "destroyer_titan_precache.nut",
+            "RunOn": "SERVER || CLIENT",
+            "ServerCallback": {
+                "Before": "DestroyerTitanPreCache"
+            },
+            "ClientCallback": {
+                "Before": "DestroyerTitanPreCache"
+            }
+        },
+        {
+            "Path": "destroyer_railgun.nut",
+            "RunOn": "SERVER || CLIENT",
+            "ServerCallback": {
+                "Before": "Destroyer_MpTitanWeaponStunLaser_Init"
+            },
+            "ClientCallback": {
+                "Before": "Destroyer_MpTitanWeaponStunLaser_Init"
+            }
+        },
+        {
+            "Path": "destroyer_core.nut",
+            "RunOn": "SERVER || CLIENT",
+            "ServerCallback": {
+                "Before": "Destroyer_AmpCore_Init"
+            },
+            "ClientCallback": {
+                "Before": "Destroyer_AmpCore_Init"
+            }
+        },
+        {
+            "Path": "destroyer_rockets.nut",
+            "RunOn": "SERVER || CLIENT",
+            "ServerCallback": {
+                "Before": "Destroyer_MpTitanWeaponShoulderRockets_Init"
+            },
+            "ClientCallback": {
+                "Before": "Destroyer_MpTitanWeaponShoulderRockets_Init"
+            }
+        },
+        {
+            "Path": "destroyer_titan_loadout_util.nut",
+            "RunOn": "SERVER || CLIENT",
+            "ServerCallback": {
+                "After": "PrimeTitanPlus_Init"
+            }
+        },
+        {
+            "Path": "destroyer_titan_main.nut",
+            "RunOn": "UI || SERVER || CLIENT",
+            "ServerCallback": {
+                "After": "DestroyerTitanSetup"
+            },
+
+            "ClientCallback": {
+                "After": "DestroyerTitanSetup"
+            },
+            "UICallback": {
+                "After": "DestroyerTitanSetup"
+            }
+        }
+	],
+    "Localisation": [
+        "resource/destroyer_titan_localization_%language%.txt"
+    ]
+}
